@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レース予測ツール</title>
+</head>
+
+<body>
+
+<h1>🏃 レース予測ツール</h1>
+
+<p>10kmのタイム（分）を入力してください</p>
+
+<input id="time" type="number">
+
+<button onclick="calc()">予測する</button>
+
+<p id="result"></p>
+
+<script>
+function calc() {
+  let time = Number(document.getElementById("time").value);
+
+  let marathon = time * 4.8;
+
+  document.getElementById("result").innerHTML =
+    "予想フルマラソンタイム：" +
+    marathon.toFixed(1) + "分";
+}
+</script>
+
+</body>
+</html>
