@@ -36,25 +36,38 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-},
-url("https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1200");
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
 text-align:center;
 padding:20px;
 }
 
 .hero h1{
-font-size:3rem;
-margin-bottom:10px;
+font-size:4rem;
+font-weight:900;
+line-height:1;
+letter-spacing:-2px;
+margin-bottom:20px;
+text-shadow:0 4px 20px rgba(0,0,0,.5);
 }
 
 .hero p{
-font-size:1.2rem;
+font-size:1.1rem;
+line-height:1.8;
+font-weight:300;
+}
+
+.line{
+width:80px;
+height:3px;
+background:#ff7b00;
+margin:20px auto;
+}
+
+.brand{
+margin-top:30px;
+font-size:0.9rem;
+letter-spacing:6px;
+font-weight:700;
+opacity:0.8;
 }
 
 .container{
@@ -107,9 +120,25 @@ color:#aaa;
 <body>
 
 <section class="hero">
-<h1>🏃 Runner's Guide</h1>
-<p>初心者からサブ3までのランナーをサポート</p>
+
+<h1>
+42.195kmの<br>
+その先へ。
+</h1>
+
+<div class="line"></div>
+
+<p>
+初心者からサブ3まで。<br>
+すべての市民ランナーのために。
+</p>
+
+<div class="brand">
+RUNNER'S GUIDE
+</div>
+
 </section>
+
 
 <div class="container">
 
